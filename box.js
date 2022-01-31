@@ -60,12 +60,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
 
-let checkboxes = document.querySelectorAll('.hide');
-let boxes  = checkboxes.some(el => {
-    return document.getElementById('id').firstChild
-});
+// let checkboxes = document.querySelectorAll('.hide');
+// let boxes  = checkboxes.some(el => {
+//     return document.getElementById('id').firstChild
+// });
 
-console.log(boxes);
+// console.log(boxes);
 
 
 // function selectAll(){
