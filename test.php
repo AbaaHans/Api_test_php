@@ -4,103 +4,26 @@
 	<meta charset="utf8">
 	<meta name="viewport" content="width=devicewidth, initialscale=1">
 	<title>Filtre sur année</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<style type="text/css">
-	.hide {
-		visibility:
-	}	
-</style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
 <body>
-	2021<input class="cel hide"  type="checkbox" name="" id="37" value="37" onchange="checkAll(this)">
-	2020<input class="cel hide" type="checkbox" name="" id="36" value="36">
-	2019<input class="cel hide" type="checkbox" name="" id="35" value="35">
-	2018<input class="cel hide" type="checkbox" natme="" id="34" value="34">
-	2017<input class="cel hide" type="checkbox" name="" id="33" value="33" >
 
+    <form action="#">
+        <label for="">2021</label>
+        <input type="checkbox" aria-details="4">
+        <label for="">2020</label>
+        <input type="checkbox" aria-details="3">
+        <label for="">2019</label>
+        <input type="checkbox" aria-details="2">
+        <label for="">2018</label>
+        <input type="checkbox" aria-details="1">
+    </form>
 
-  
-<script src="box.js">
-
-
-
-// $(function(){
-//   $("input.hide").change( function(){
-//     limit = 3;
-//     hide = $("input.hide:checked").length;
-//     if(hide>limit){
-//         $(this).attr("checked",false);
-//     }
-//   })
-// })
-     
-// 	function switchActive (html) 
-// 	{
-// 		let active = false
-		
-// 		if (html.classList.contains('active'))
-// 		{
-// 			html.classList.remove('active')
-// 			active = false
-// 		}
-// 		else
-// 		{
-// 			html.classList.add('active')
-// 			active = true
-// 		}
-// 		return active
-// 	}
-// // Le tableau des années
-// let tabcell 		= document.querySelectorAll('.cel')   
-// // Dernier element du tableau global
-// let globalLastElement =  	tabcell[tabcell.length-1]
-// // Initialisation
-// if (globalLastElement.classList.contains('hide'))
-// {
-// 	globalLastElement.classList.remove('hide')
-// }
-// // tableau global des annees
-// let globalCheckTab 			= document.querySelectorAll('.hide') 
-// let tabCheck 				= Object.values(globalCheckTab)
-// let estActive = false
-// globalLastElement.addEventListener ('click', () =>
-// {
-// 	let coche = switchActive(globalLastElement)
-// 	if (coche)
-// 	{
-// 		estActive = true
-// 	}
-// 	else {
-// 		estActive = false
-// 	}
-// })
-// // Boucle pour gerer la selection
-// for (let i=0; i < globalCheckTab.length; i++)
-// {	
-// 	// Si on click sur un checkbox
-// 	globalCheckTab[i].addEventListener('click', () => 
-// 	{
-// 		let self 	= globalCheckTab[i]
-// 		let coche 	= switchActive(self)
-// 		tabCheck = globalCheckTab
-// 		let index = tabCheck.length-1
-// 		let previousElement = tabCheck[index]
-// 		// extraction du tableau de active
-// 		for (j=0; j < tabCheck.length; j++)
-// 		{
-// 		}
-// 		if (globalLastElement.checked)
-// 		{
-// 			if (coche)
-// 			{
-// 				previousElement.classList.remove('hide')
-// 			}
-// 			else {
-// 				previousElement.classList.add('hide')
-// 			}
-// 		}
-// 	})
-// }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </script>
+<script src="box.js"></script>
 </body>
 </html>
